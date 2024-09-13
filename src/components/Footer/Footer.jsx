@@ -24,28 +24,28 @@ function Footer() {
           {/* Add responsiveness for two columns at 1100px */}
           <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:mr-8">
             <li>
-              {/* <Link to="/">Home</Link> */}
-              <a href="/">Home</a>
+              <Link to="/">Home</Link>
+              {/* <a href="/">Home</a> */}
             </li>
             <li>
-              {/* <Link to="/skills">Skills</Link> */}
-              <a href="/skills">Skills</a>
+              <Link to="/skills">Skills</Link>
+              {/* <a href="/skills">Skills</a> */}
             </li>
             <li>
-              {/* <Link to="/experience">Experience</Link> */}
-              <a href="/experience">Experience</a>
+              <Link to="/experience">Experience</Link>
+              {/* <a href="/experience">Experience</a> */}
             </li>
             <li>
-              {/* <Link to="/projects">Projects</Link> */}
-              <a href="/projects">Projects</a>
+              <Link to="/projects">Projects</Link>
+              {/* <a href="/projects">Projects</a> */}
             </li>
             <li>
-              {/* <Link to="/education">Education</Link> */}
-              <a href="/education">Education</a>
+              <Link to="/education">Education</Link>
+              {/* <a href="/education">Education</a> */}
             </li>
             <li>
-              {/* <Link to="/contact">Contact</Link> */}
-              <a href="/contact">Contact</a>
+              <Link to="/contact">Contact</Link>
+              {/* <a href="/contact">Contact</a> */}
             </li>
             <li>
               <Link to="/privacy-policy">Privacy Policy</Link>
