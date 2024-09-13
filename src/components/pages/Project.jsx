@@ -3,6 +3,8 @@ import "./Project.css";
 import ProjectCard from "../ProjectCard";
 import bird from "../../assets/bird.webp";
 import ProjectGallery from "../ProjectGallery";
+import Blog from "../../assets/Projects/Blog.PNG";
+import Event from "../../assets/Projects/Event.PNG";
 function Project() {
   return (
     <div>
@@ -18,9 +20,9 @@ function Project() {
           title="Blog Website"
           description="A full-stack blog platform built with React.js, Redux Toolkit, and Appwrite, featuring user authentication and CRUD operations for blog posts. Integrated Appwrite for real-time data handling, file uploads, and user management, with a fully responsive design."
           techStack={["React", "Appwrite"]} // Single string for techStack
-          imageSrc={bird}
+          imageSrc={Blog}
           githubLink="https://github.com/Moni-Chaurasiya/Blog-Website.git"
-          liveProjectLink="https://blog-website-phi-three.vercel.app/"
+          liveProjectLink="https://blog-website-phi-three.vercel.app"
         />
         <ProjectCard
           fieldName="Frontend"
@@ -43,7 +45,7 @@ function Project() {
             "ExpressJS",
             "PostgreSQL",
           ]}
-          imageSrc={bird}
+          imageSrc={Event}
           githubLink="https://github.com/Moni-Chaurasiya/project3-nexus.git"
           liveProjectLink="https://github.com/Moni-Chaurasiya/project3-nexus.git"
         />

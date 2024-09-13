@@ -31,7 +31,7 @@
     margin: 10px;
     border-radius: 10px;
     width: 100%; /* Make the image responsive */
-    max-width: 300px; /* Set a max width for image */
+    max-width: 350px; /* Set a max width for image */
     object-fit: cover;
   }
 
