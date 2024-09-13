@@ -43,10 +43,10 @@ function Header() {
     },
   ];
 
-  // const handleNavigation = (slug) => {
-  //   setIsMenuOpen(false);
-  //   navigate(slug);
-  // };
+  const handleNavigation = (slug) => {
+    setIsMenuOpen(false);
+    navigate(slug);
+  };
 
   return (
     <header className="bg-white shadow-md fixed w-full top-0 z-50">
@@ -63,10 +63,10 @@ function Header() {
             .map((item) => (
               <button
                 key={item.name}
-                //    onClick={() => handleNavigation(item.slug)}
+                onClick={() => handleNavigation(item.slug)}
                 className="text-gray-700 hover:text-gray-900 text-2xl font-serif"
               >
-                <a href={item.slug}> {item.name} </a>
+                {item.name}
               </button>
             ))}
         </div>
@@ -146,11 +146,11 @@ function Header() {
                 .map((item) => (
                   <li key={item.name}>
                     <button
-                      // onClick={() => handleNavigation(item.slug)}
+                      onClick={() => handleNavigation(item.slug)}
                       className="text-gray-700 hover:text-gray-900 w-full text-left text-2xl font-serif "
                     >
-                      {/* {item.name} */}
-                      <a href={item.slug}> {item.name} </a>
+                      {item.name}
+                      {/* <a href={item.slug}> {item.name} </a> */}
                     </button>
                   </li>
                 ))}

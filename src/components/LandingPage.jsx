@@ -7,7 +7,7 @@ import { SiLeetcode, SiFreelancer } from "react-icons/si";
 import ProfileImg from "../assets/ProfileImg.jpeg";
 import ProfileBackImg from "../assets/ProfileBackImg.jpeg";
 import ThirdImg from "../assets/MainProfile.png"; // Import the third image
-
+import { Link } from "react-router-dom";
 const photoSlides = [ProfileImg, ProfileBackImg];
 const resume =
   "https://drive.google.com/file/d/1cjDOfFDy38OYOfggF6GYG_SPY-FwE6Av/view?usp=drivesdk";
@@ -108,7 +108,7 @@ const LandingPage = () => {
                 Download Resume
               </button>
               <button className="view-work-btn text-lg font-serif">
-                <a href="/projects">View Work</a>
+                <Link to="/projects">View Work</Link>
               </button>
             </div>
 
@@ -118,11 +118,11 @@ const LandingPage = () => {
                 <div className="stats-text">Experience</div>
               </div>
               <div className="stats-column">
-                <div className="stats-number">20+</div>
+                <div className="stats-number">12+</div>
                 <div className="stats-text">Projects</div>
               </div>
               <div className="stats-column">
-                <div className="stats-number">80+</div>
+                <div className="stats-number">40+</div>
                 <div className="stats-text">Clients</div>
               </div>
             </div>
