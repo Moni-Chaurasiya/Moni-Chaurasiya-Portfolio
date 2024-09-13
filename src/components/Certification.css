@@ -1,0 +1,135 @@
+.certification-section {
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+  }
+  
+  .certification-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    font-style: italic;
+    color: aliceblue;
+  }
+  
+  .certification-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  
+  .certification-card {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    transition: transform 1s ease, opacity 1s ease;
+    transform: translateX(100%); 
+  }
+  
+  .certification-image {
+    width: 65%;
+    border-radius: 10px;
+    transform: scale(1);
+    transition: transform 0.5s ease;
+  box-shadow: 2px 2px 10px skyblue;
+  }
+  
+  .certification-card.active .certification-image {
+    transform: scale(1.1); 
+  }
+  
+  .arrow {
+    background: none;
+    border: black;
+    font-size: 2rem;
+    cursor: pointer;
+    color: skyblue;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+  
+  .left-arrow {
+    left: 10px;
+  }
+  
+  .right-arrow {
+    right: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .certification-image {
+      width: 90%; 
+
+    }
+    .certification-card {
+        width: 100%;
+    }
+  
+    .certification-title {
+      font-size: 2rem;
+    }
+    .certification-container {
+        width:100%
+    }
+    .arrow {
+        color: rgb(143, 6, 6);
+    }
+  }
+  
+  
+
+
+
+  .certification-card.active {
+    opacity: 1;
+    animation: slideIn 1s ease forwards; 
+  }
+  
+  .certification-card.exit {
+    animation: slideOut 1s ease forwards; 
+  }
+
+  .certification-card.active .certification-image {
+    transform: scale(1.1); 
+  }
+  @keyframes slideIn {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideOut {
+    0% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+  }
+   
+
+
+
+
+
+
+
+
+
+
+
+

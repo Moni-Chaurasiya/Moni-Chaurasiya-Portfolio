@@ -5,13 +5,13 @@ import LeetProfile from "../assets/LeetProfile.PNG";
 const achievements = [
   {
     image: AllBadge,
-    title: "Achievement 1",
-    description: "This is a brief description of Achievement 1.",
+    title: "Leetcode",
+    description: "Completed 100 days of solving problem on Leetcode in 2024",
   },
   {
     image: LeetProfile,
-    title: "Achievement 2",
-    description: "This is a brief description of Achievement 2.",
+    title: "Leetcode",
+    description: "Solved more than 250+ problem on Leetcode",
   },
   // Add more achievements as needed
 ];
@@ -43,12 +43,12 @@ const Achievement = () => {
           <img
             src={achievements[currentIndex].image}
             alt={achievements[currentIndex].title}
-            className="achievement-image"
+            className="achievement-image transform transition-transform duration-500 hover:scale-110"
           />
           <h2 className="achievement-heading">
             {achievements[currentIndex].title}
           </h2>
-          <p className="achievement-description">
+          <p className="achievement-description text-mono  ">
             {achievements[currentIndex].description}
           </p>
         </div>

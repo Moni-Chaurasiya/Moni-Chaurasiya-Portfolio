@@ -28,17 +28,21 @@ function Login() {
   return (
     <div className="flex items-center justify-center w-full mb-20 mt-5">
       <div
-        className={`mx-auto w-full max-w-lg bg-gray-200 rounded-xl p-10 border border-black/10`}
+        className={`mx-auto w-full max-w-lg  rounded-xl p-10 border text-white`}
+        style={{
+          background: "rgb(1, 1, 43)",
+          boxShadow: "2px 2px 8px #31bcf8",
+        }}
       >
         <div className="mb-2 flex justify-center">
-          <span className="inline-block w-full max-w-[100px]">
-            {/* <Logo /> */}
+          <span className="inline-block w-full max-w-[100px] mr-16">
+            <Logo />
           </span>
         </div>
-        <h2 className="text-center text-2xl font-bold leading-tight">
+        <h2 className="text-center text-2xl font-bold leading-tight text-yellow-400">
           Sign in to your account
         </h2>
-        <p className="mt-2 text-center text-base text-black/60">
+        <p className="mt-2 text-center text-base text-white">
           Don&apos;t have any account?&nbsp;
           <Link
             to="/signup"

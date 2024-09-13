@@ -1,0 +1,29 @@
+.title-section {
+  text-align: center;
+  padding: 20px;
+  margin-top: 35px;
+}
+
+.project-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-style: italic;
+  color: aliceblue;
+}
+
+@keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .animate-marquee {
+    display: flex;
+    animation: marquee 30s linear infinite;
+    animation-timing-function: linear;
+    will-change: transform;
+  }

@@ -61,27 +61,18 @@ const Skills = () => {
           About Me {showAboutMe ? "▲" : "▼"}
         </button>
         {showAboutMe && (
-          // <div className="about-me-content">
-          //   <p className=" font-mono text-2xl font-thin">
-          //     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          //     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-          //     enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          //     nisi ut aliquip ex ea commodo consequat.
-          //   </p>
-          // </div>
-
           <div
             style={{
-              width: "100%", // Full width of the screen
-              padding: "16px", // Padding for spacing
-              boxSizing: "border-box", // Ensures padding is within the width
-              //textAlign: "center", // Center the text horizontally
-              color: "white", // Set text color to white
-              display: "flex", // Flexbox for vertical alignment
-              //  justifyContent: "center", // Horizontally center the content
-              alignItems: "center", // Vertically center the content
+              width: "100%",
+              padding: "16px",
+              boxSizing: "border-box",
+              //textAlign: "center",
+              color: "white",
+              display: "flex",
 
-              fontSize: "1.2rem", // Responsive text size
+              alignItems: "center",
+
+              fontSize: "1.2rem",
             }}
           >
             <div

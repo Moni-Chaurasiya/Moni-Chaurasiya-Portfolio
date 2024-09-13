@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { Container, Logo, Logout } from "../index";
-import { Link } from "react-router-dom";
+//import { Container} from "../index";
+//import { Link } from "react-router-dom";
+import { Logo, Logout } from "../index";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 
@@ -20,11 +21,11 @@ function Header() {
       slug: "/skills",
       active: true,
     },
-    {
-      name: "Experience",
-      slug: "/experience",
-      active: true,
-    },
+    // {
+    //   name: "Experience",
+    //   slug: "/experience",
+    //   active: true,
+    // },
     {
       name: "Projects",
       slug: "/projects",
@@ -33,45 +34,45 @@ function Header() {
     {
       name: "Education",
       slug: "/education",
-      active: isAuthenticated, // Only show if authenticated
+      active: true,
     },
     {
       name: "Contact",
       slug: "/contact",
-      active: isAuthenticated, // Only show if authenticated
+      active: true,
     },
   ];
 
-  const handleNavigation = (slug) => {
-    setIsMenuOpen(false);
-    navigate(slug);
-  };
+  // const handleNavigation = (slug) => {
+  //   setIsMenuOpen(false);
+  //   navigate(slug);
+  // };
 
   return (
     <header className="bg-white shadow-md fixed w-full top-0 z-50">
       <nav className="flex items-center justify-between py-2   px-6">
         {/* Logo */}
-        <Link to="/" className="outline-none border-none">
+        <a href="/" className="outline-none border-none">
           <Logo />
-        </Link>
+        </a>
 
         {/* Navigation Links */}
-        <div className="hidden md:flex flex-grow justify-center space-x-8">
+        <div className="hidden lg:flex flex-grow justify-center space-x-7 md:space-x-7">
           {navItems
             .filter((item) => item.active)
             .map((item) => (
               <button
                 key={item.name}
-                onClick={() => handleNavigation(item.slug)}
+                //    onClick={() => handleNavigation(item.slug)}
                 className="text-gray-700 hover:text-gray-900 text-2xl font-serif"
               >
-                {item.name}
+                <a href={item.slug}> {item.name} </a>
               </button>
             ))}
         </div>
 
         {/* Auth Buttons */}
-        <div className="hidden md:flex space-x-4">
+        <div className="hidden lg:flex space-x-4">
           {isAuthenticated ? (
             <Logout /> // Use the logout component
           ) : (
@@ -93,7 +94,7 @@ function Header() {
         </div>
 
         {/* Hamburger Menu for Mobile */}
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="text-gray-700 focus:outline-none"
@@ -118,7 +119,7 @@ function Header() {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden fixed inset-0 bg-gray-800 bg-opacity-75 z-40">
+        <div className="lg:hidden fixed inset-0 bg-gray-800 bg-opacity-75 z-40">
           <div className="fixed right-0 top-0 w-64 h-full bg-white shadow-lg z-50 p-6">
             <button
               onClick={() => setIsMenuOpen(false)}
@@ -145,10 +146,11 @@ function Header() {
                 .map((item) => (
                   <li key={item.name}>
                     <button
-                      onClick={() => handleNavigation(item.slug)}
+                      // onClick={() => handleNavigation(item.slug)}
                       className="text-gray-700 hover:text-gray-900 w-full text-left text-2xl font-serif "
                     >
-                      {item.name}
+                      {/* {item.name} */}
+                      <a href={item.slug}> {item.name} </a>
                     </button>
                   </li>
                 ))}

@@ -2,6 +2,7 @@
 //import { Link } from "react-router-dom";
 import { FaWhatsapp, FaLinkedin, FaGithub, FaYoutube } from "react-icons/fa";
 import { SiLeetcode, SiFreelancer } from "react-icons/si";
+import ContactForm from "../ContactForm";
 const Contact = () => {
   return (
     <section id="contact" className="py-16">
@@ -30,7 +31,7 @@ const Contact = () => {
                 </h4>
                 <p className="mt-2">
                   <a
-                    href="https://www.google.co.in/maps/place/Jobs+Enclave/@22.0868909,82.1821008,17z/data=!3m1!4b1!4m5!3m4!1s0x3a280bc7c2ff6c23:0x4412edddb029ad80!8m2!3d22.0868909!4d82.1842895?shorturl=1"
+                    href="https://www.google.co.in/maps/place/Jobs+Enclave/@22.0868909,82.182808,17z/data=!3m1!4b1!4m5!3m4!1s0x3a280bc7c2ff6c23:0x4412edddb029ad80!8m2!3d22.0868909!4d82.1842895?shorturl=1"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-sky-300 hover:underline"
@@ -67,7 +68,7 @@ const Contact = () => {
               </div>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!4v1694171115117!6m8!1m7!1sCAoSLEFGMVFpcE9EV3FrT2wzTkxITXJ5Rl9pVUtOMUhOMUdQcXRTZ1o1SzdWZnJl!2m2!1d19.025719!2d72.870728!3f229.54!4f0!5f0.7820865974627469"
-                style={{ border: 0, width: "100%", height: "290px" }}
+                style={{ border: 0, width: "80%", height: "290px" }}
                 allowfullscreen=""
                 loading="lazy"
               ></iframe>
@@ -83,7 +84,7 @@ const Contact = () => {
               <h3 className="text-2xl font-semibold mb-6 text-white">
                 CONTACT FORM
               </h3>
-              <form
+              {/* <form
                 action="https://send.pageclip.co/qnLaFhcAVVndZtVNOIgDerlPRuqHUKqy"
                 method="post"
               >
@@ -133,7 +134,9 @@ const Contact = () => {
                 >
                   Submit
                 </button>
-              </form>
+              </form> */}
+
+              <ContactForm />
             </div>
           </div>
 
@@ -152,7 +155,7 @@ const Contact = () => {
                     rel="noopener noreferrer"
                     className="text-sky-400 hover:text-white transition-colors duration-300"
                   >
-                    <FaWhatsapp size={100} />
+                    <FaWhatsapp size={80} />
                   </a>
                   <a
                     href="https://www.linkedin.com/in/moni-chaurasiya"
@@ -160,7 +163,7 @@ const Contact = () => {
                     rel="noopener noreferrer"
                     className="text-sky-400 hover:text-white transition-colors duration-300"
                   >
-                    <FaLinkedin size={100} />
+                    <FaLinkedin size={80} />
                   </a>
                 </div>
                 <div className="flex justify-center space-x-4">
@@ -170,7 +173,7 @@ const Contact = () => {
                     rel="noopener noreferrer"
                     className="text-sky-400 hover:text-white transition-colors duration-300"
                   >
-                    <FaGithub size={100} />
+                    <FaGithub size={80} />
                   </a>
                   <a
                     href="https://leetcode.com/u/Moni_Chaurasiya/"
@@ -178,7 +181,7 @@ const Contact = () => {
                     rel="noopener noreferrer"
                     className="text-sky-400 hover:text-white transition-colors duration-300"
                   >
-                    <SiLeetcode size={100} />
+                    <SiLeetcode size={80} />
                   </a>
                 </div>
                 <div className="flex justify-center space-x-4">
@@ -188,7 +191,7 @@ const Contact = () => {
                     rel="noopener noreferrer"
                     className="text-sky-400 hover:text-white transition-colors duration-300"
                   >
-                    <SiFreelancer size={101} />
+                    <SiFreelancer size={80} />
                   </a>
                   <a
                     href="https://www.youtube.com/@Moni.Chaurasiya"
@@ -196,7 +199,7 @@ const Contact = () => {
                     rel="noopener noreferrer"
                     className="text-sky-400 hover:text-white transition-colors duration-300"
                   >
-                    <FaYoutube size={100} />
+                    <FaYoutube size={80} />
                   </a>
                 </div>
               </div>

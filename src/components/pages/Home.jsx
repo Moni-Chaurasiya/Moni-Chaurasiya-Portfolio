@@ -1,9 +1,10 @@
 //import React from 'react'
 import LandingPage from "../LandingPage";
 import Skills from "../Skills";
-import Experience from "../Experience";
+//import Experience from "../Experience";
 import background from "../../assets/bg.jpg";
 import Achievement from "../Achievement";
+import Certification from "../Certification";
 function Home() {
   return (
     <div
@@ -26,8 +27,25 @@ function Home() {
         }}
       />
       <Skills />
+      <hr
+        style={{
+          width: "80%",
+          margin: "2rem auto",
+          borderTop: "2px solid yellow",
+          height: "4px",
+        }}
+      />
       <Achievement />
-      <Experience />
+      <hr
+        style={{
+          width: "80%",
+          margin: "2rem auto",
+          borderTop: "2px solid yellow",
+          height: "4px",
+        }}
+      />
+      <Certification />
+      {/* <Experience /> */}
     </div>
   );
 }

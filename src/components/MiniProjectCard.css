@@ -1,0 +1,85 @@
+.miniProjectCard {
+    background-color: #010e25; /* Dark navy blue */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .miniProjectCard:hover {
+    transform: scale(1.05); /* Add hover effect */
+  }
+  
+  .miniProjectTitle {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .miniProjectImageContainer {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  
+  .miniProjectImage {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 3px solid #024670; /* Cyan border */
+  }
+  
+  .miniProjectTechStackContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .miniProjectTechStackItem {
+    background-color: #0e2a5e; /* Light navy blue */
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+  }
+  
+  .miniProjectViewCodeButton {
+    background-color: #1a73e8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+  }
+  @media (max-width: 400px) {
+    .miniProjectViewCodeButton {
+      padding: 5px 10px;
+    }
+    .miniProjectTechStackItem{
+      padding: 4px 6px;
+    }
+  }
+  .miniProjectViewCodeButton:hover {
+    background-color: black;
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 768px) {
+    .miniProjectCard {
+      max-width: 90%; /* Full width for smaller screens */
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1200px) {
+    .miniProjectCard {
+      max-width: 80%;
+    }
+  }
+  

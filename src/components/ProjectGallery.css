@@ -1,0 +1,28 @@
+
+
+
+  .projectGalleryContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  .projectGalleryContainer > * {
+    flex-basis: calc(30% - 20px); /* Each card takes up 20% of the container width minus the gap */
+    margin-bottom: 20px;
+  }
+  
+  /* For screens smaller than 768px, stack the cards vertically */
+  @media (max-width: 768px) {
+    .projectGalleryContainer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .projectGalleryContainer > * {
+      flex-basis: 100%; /* Full width on mobile */
+    }
+  }
+  
