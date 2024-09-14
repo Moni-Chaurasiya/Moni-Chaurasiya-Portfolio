@@ -104,7 +104,7 @@ function Footer() {
           </div>
           <div>
             <p>Mobile: +91-7039403687</p>
-            <p>Email: monichaurasiya@gmail.com</p>
+            <p>Email: monichaurasiya993@gmail.com</p>
           </div>
         </div>
       </div>
