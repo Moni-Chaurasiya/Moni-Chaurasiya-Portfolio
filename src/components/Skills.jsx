@@ -8,6 +8,8 @@ import Tailwind from "../assets/Tailwind.png";
 import JS from "../assets/JavaScript.png";
 import BootStrap from "../assets/BootStrap.png";
 import R from "../assets/React.png";
+import NextJS from "../assets/nextjs.png";
+import flutter from "../assets/flutter.png"
 import Python from "../assets/Python.png";
 import Node from "../assets/Node.png";
 import Express from "../assets/ExpressJS.png";
@@ -39,7 +41,7 @@ const Skills = () => {
       <div className="skill-page h-[55vh] overflow-y-auto p-4 m-3">
         <SkillCard
           fieldName="Frontend"
-          skillLogos={[Html, CSS, Tailwind, JS, BootStrap, R]}
+          skillLogos={[Html, CSS, Tailwind, JS, BootStrap, R, NextJS, flutter]}
         />
         <SkillCard
           fieldName="Backend"
@@ -81,7 +83,7 @@ const Skills = () => {
             >
               <p></p>
               Hello! <br />I am a{" "}
-              <span className="italic text-sky-500">Third-year student</span> 👩‍🎓
+              <span className="italic text-sky-500">Final-year student</span> 👩‍🎓
               in the Department of
               <span className="italic text-sky-500">
                 {" "}

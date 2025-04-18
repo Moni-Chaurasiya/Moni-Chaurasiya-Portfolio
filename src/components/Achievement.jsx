@@ -2,6 +2,10 @@ import { useState } from "react";
 import "./Achievement.css";
 import AllBadge from "../assets/AllBadge.PNG";
 import LeetProfile from "../assets/LeetProfile.PNG";
+import AugmentERA from "../assets/AugmentERA.jpeg"
+import DeepBlue from "../assets/DeepBlue.jpeg"
+import DeepMeme from "../assets/DeepMeme.jpeg"
+import Innovative from "../assets/InnovativeProject.jpeg"
 const achievements = [
   {
     image: AllBadge,
@@ -12,6 +16,26 @@ const achievements = [
     image: LeetProfile,
     title: "Leetcode",
     description: "Solved more than 250+ problem on Leetcode",
+  },
+  {
+    image: DeepBlue,
+    title: "Hackathon",
+    description: "Deep Blue Semi-Finalist --> Successfully completed project of working solution",
+  },
+  {
+    image: Innovative,
+    title: "Competition",
+    description: "Most Innovative Project - AI Enhanced Home Design Using Augmented Reality",
+  },
+  {
+    image: AugmentERA,
+    title: "SCOE AVISHKAR - 2025",
+    description: "Consolation Prize",
+  },
+  {
+    image: DeepMeme,
+    title: "Publication",
+    description: "Research Paper Published in International Journal of Innovative Research in Engineering",
   },
   // Add more achievements as needed
 ];

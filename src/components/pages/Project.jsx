@@ -5,6 +5,8 @@ import bird from "../../assets/bird.webp";
 import ProjectGallery from "../ProjectGallery";
 import Blog from "../../assets/Projects/Blog.PNG";
 import Event from "../../assets/Projects/Event.PNG";
+import Message from "../../assets/Message.png"
+import AIAR from "../../assets/Projects/AIAR.PNG"
 import { Link } from "react-router-dom";
 function Project() {
   return (
@@ -16,6 +18,24 @@ function Project() {
         <p className="text-yellow-500 mb-2 text-2xl">RECENT PROJECTS</p>
       </div>
       <div className="">
+      <ProjectCard
+          fieldName="App Development"
+          title="AI-Enhanced Home Design with Augmented Reality (HDA)"
+          description="AI-Enhanced Home Design with Augmented Reality (HDA) transforms interior design by combining AR for real-time spatial visualization and AI for personalized recommendations and cost estimates. It allows users to scan spaces, input preferences, and receive instant, tailored designs. HDA enhances user satisfaction by reducing design errors, saving time and cost, and offering a remote-friendly, intelligent design experience."
+          techStack={["Flutter", "Flask", "Deep Lab Model","Stable Diffusion","Google Cloud","Vercel"]} 
+          imageSrc={AIAR}
+          githubLink="https://github.com/Moni-Chaurasiya/AI-Enhanced-Home-Design-Using-Augmented-Reality.git"
+          liveProjectLink="https://github.com/Moni-Chaurasiya/AI-Enhanced-Home-Design-Using-Augmented-Reality.git"
+        />
+       <ProjectCard
+          fieldName="Fullstack"
+          title="Anonymous Message Sharing Web App"
+          description="Message sharing web application where users can sign up, log in securely, and receive messages and images through a unique public URL. Visitors can send anonymous text or image-based messages, while users have full control over their inbox—they can choose to accept or reject new messages, delete existing ones."
+          techStack={["Next.js", "Tailwind CSS", "Node.js", "Express.js","MongoDB", "Cloudinary","Vercel"]} // Single string for techStack
+          imageSrc={Message}
+          githubLink="https://github.com/Moni-Chaurasiya/NextJS-MessageApp.git"
+          liveProjectLink="https://mistry-message-git-master-moni-chaurasiyas-projects.vercel.app"
+        />
         <ProjectCard
           fieldName="Fullstack"
           title="Blog Website"
