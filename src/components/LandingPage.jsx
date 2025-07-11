@@ -10,7 +10,7 @@ import ThirdImg from "../assets/MainProfile.png"; // Import the third image
 import { Link } from "react-router-dom";
 const photoSlides = [ProfileImg, ProfileBackImg];
 const resume =
-  "https://drive.google.com/file/d/1cjDOfFDy38OYOfggF6GYG_SPY-FwE6Av/view?usp=drivesdk";
+  "https://drive.google.com/file/d/1JG4ROoxWSorxha2IB5Dk6jAU_YLDr7Cn/view?usp=drive_link";
 
 const LandingPage = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
