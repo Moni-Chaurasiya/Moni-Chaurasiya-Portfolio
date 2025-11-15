@@ -6,6 +6,8 @@ import AugmentERA from "../assets/AugmentERA.jpeg"
 import DeepBlue from "../assets/DeepBlue.jpeg"
 import DeepMeme from "../assets/DeepMeme.jpeg"
 import Innovative from "../assets/InnovativeProject.jpeg"
+
+import { useEffect } from "react";
 const achievements = [
   {
     image: AllBadge,
@@ -37,20 +39,41 @@ const achievements = [
     title: "Publication",
     description: "Research Paper Published in International Journal of Innovative Research in Engineering",
   },
-  // Add more achievements as needed
+
 ];
 
 const Achievement = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isAnimating, setIsAnimating] = useState(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      handleNext();
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % achievements.length);
+    if (!isAnimating) {
+      setIsAnimating(true);
+      setTimeout(() => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % achievements.length);
+        setIsAnimating(false);
+      }, 500);
+    }
   };
 
   const handlePrev = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? achievements.length - 1 : prevIndex - 1
-    );
+    if (!isAnimating) {
+      setIsAnimating(true);
+      setTimeout(() => {
+        setCurrentIndex((prevIndex) =>
+          prevIndex === 0 ? achievements.length - 1 : prevIndex - 1
+        );
+        setIsAnimating(false);
+      }, 500);
+    }
   };
 
   return (
@@ -63,16 +86,19 @@ const Achievement = () => {
         <button className="arrow left-arrow" onClick={handlePrev}>
           &#10094;
         </button>
-        <div className="achievement-card">
+        <div className="achievement-card" key={currentIndex}>
           <img
             src={achievements[currentIndex].image}
             alt={achievements[currentIndex].title}
-            className="achievement-image transform transition-transform duration-500 hover:scale-110"
+            className="achievement-image"
+            style={{
+              animation: isAnimating ? 'slideOut 0.5s ease-in-out' : 'slideIn 0.5s ease-in-out'
+            }}
           />
           <h2 className="achievement-heading">
             {achievements[currentIndex].title}
           </h2>
-          <p className="achievement-description text-mono  ">
+          <p className="achievement-description text-mono">
             {achievements[currentIndex].description}
           </p>
         </div>
@@ -80,6 +106,34 @@ const Achievement = () => {
           &#10095;
         </button>
       </div>
+      
+      <style>{`
+        @keyframes slideIn {
+          from {
+            transform: translateX(100%);
+            opacity: 0;
+            scale: 0.8;
+          }
+          to {
+            transform: translateX(0);
+            opacity: 1;
+            scale: 1.05;
+          }
+        }
+        
+        @keyframes slideOut {
+          from {
+            transform: translateX(0);
+            opacity: 1;
+            scale: 1.05;
+          }
+          to {
+            transform: translateX(-100%);
+            opacity: 0;
+            scale: 0.8;
+          }
+        }
+      `}</style>
     </div>
   );
 };
