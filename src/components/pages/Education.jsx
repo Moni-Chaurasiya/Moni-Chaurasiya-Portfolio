@@ -115,7 +115,7 @@ const Education = () => {
                   Bachelor of Engineering (BE) - Computer Engineering
                 </p>
                 <p className="text-white">2022 - 2026</p>
-                <p className="text-white">CGPA: 8.51 (until semester 4)</p>
+                <p className="text-white">CGPA: 8.5</p>
               </p>
 
               <button className="bg-blue-900 mt-2 p-2 rounded hover:bg-blue-950">

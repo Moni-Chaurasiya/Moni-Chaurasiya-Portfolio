@@ -10,7 +10,10 @@ import AIAR from "../../assets/Projects/AIAR.PNG";
 import WeatherChat from "../../assets/Projects/WeatherChat.PNG";
 import FinanceTracker from "../../assets/Projects/FinanceTracker.PNG";
 import StudentPortal from "../../assets/Projects/StudentPortal.PNG";
+import DevDirectry from "../../assets/Projects/DevDirectory.PNG";
+import UIFromFigma from "../../assets/Projects/UIFromFigma.PNG";
 import { Link } from "react-router-dom";
+
 function Project() {
   return (
     <div>
@@ -56,6 +59,15 @@ function Project() {
         />
         <ProjectCard
           fieldName="Fullstack"
+          title="Developer Directry"
+          description="A modern, full-stack developer directory application with dark/light mode, search, and filter capabilities. Built with React.js, Node.js, Express.js, and MongoDB, it features user authentication, profile management, and a responsive design for seamless access across devices."
+          techStack={["React", "Node.js", "Express", "MongoDB"]}
+          imageSrc={DevDirectry}
+          githubLink="https://github.com/Moni-Chaurasiya/developer-directory.git"
+          liveProjectLink="https://developer-directory-kappa.vercel.app/"
+        />
+        <ProjectCard
+          fieldName="Fullstack"
           title="Personal Finance Tracker"
           description="Built an expense tracker with a clean dashboard interface, supporting transaction management, filtering, and visual summaries through charts. Developed a full-stack system with robust APIs, validation, and state management to handle income/expense tracking efficiently."
           techStack={["React", "Node.js", "Express", "MongoDB"]}
@@ -71,6 +83,15 @@ function Project() {
           imageSrc={WeatherChat}
           githubLink="https://github.com/Moni-Chaurasiya/Pazago-Weather-Agent-Chat-Interface.git"
           liveProjectLink="https://github.com/Moni-Chaurasiya/Pazago-Weather-Agent-Chat-Interface.git"
+        />
+                <ProjectCard
+          fieldName="Frontend"
+          title="Pixel-Perfect Responsive UI Built from Figma Design"
+          description="Responsive modern UI for lilypads-landing-page built using React and Tailwind CSS. Translated Figma designs into pixel-perfect code, ensuring responsiveness and cross-browser compatibility for an optimal user experience across devices."
+          techStack={["React", "Tailwind CSS"]}
+          imageSrc={UIFromFigma}
+          githubLink="https://github.com/Moni-Chaurasiya/Lilypads-Landing-Page.git"
+          liveProjectLink="https://lilypads-landing-page.vercel.app/"
         />
         <ProjectCard
           fieldName="Fullstack"
