@@ -54,8 +54,8 @@ function Project() {
             "Cloudinary",
           ]}
           imageSrc={StudentPortal}
-          githubLink="https://github.com/TechnicalVidya/portal.git"
-          liveProjectLink="https://github.com/TechnicalVidya/portal.git"
+          githubLink="https://github.com/Moni-Chaurasiya/portal.git"
+          liveProjectLink="https://portal-lime-seven.vercel.app/"
         />
         <ProjectCard
           fieldName="Fullstack"
@@ -84,7 +84,7 @@ function Project() {
           githubLink="https://github.com/Moni-Chaurasiya/Pazago-Weather-Agent-Chat-Interface.git"
           liveProjectLink="https://github.com/Moni-Chaurasiya/Pazago-Weather-Agent-Chat-Interface.git"
         />
-                <ProjectCard
+        <ProjectCard
           fieldName="Frontend"
           title="Pixel-Perfect Responsive UI Built from Figma Design"
           description="Responsive modern UI for lilypads-landing-page built using React and Tailwind CSS. Translated Figma designs into pixel-perfect code, ensuring responsiveness and cross-browser compatibility for an optimal user experience across devices."
