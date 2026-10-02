@@ -18,6 +18,7 @@ const MiniProjectCard = ({ title, imageSrc, techStack, githubLink }) => {
           </span>
         ))}
       </div>
+
       <button
         className="miniProjectViewCodeButton"
         onClick={() => window.open(githubLink)}
