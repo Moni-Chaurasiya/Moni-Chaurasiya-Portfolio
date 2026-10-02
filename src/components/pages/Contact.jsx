@@ -67,9 +67,10 @@ const Contact = () => {
                 </p>
               </div>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!4v1694171115117!6m8!1m7!1sCAoSLEFGMVFpcE9EV3FrT2wzTkxITXJ5Rl9pVUtOMUhOMUdQcXRTZ1o1SzdWZnJl!2m2!1d19.025719!2d72.870728!3f229.54!4f0!5f0.7820865974627469"
+                src="https://maps.google.com/maps?q=Mumbai%2C%20India&output=embed"
+                title="Map showing Mumbai, India"
                 style={{ border: 0, width: "80%", height: "290px" }}
-                allowfullscreen=""
+                allowFullScreen
                 loading="lazy"
               ></iframe>
             </div>
