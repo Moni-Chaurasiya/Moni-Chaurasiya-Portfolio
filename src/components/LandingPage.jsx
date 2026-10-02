@@ -92,7 +92,7 @@ const LandingPage = () => {
                 <SiFreelancer size={26} />
               </a>
               <a
-                href="https://www.youtube.com/@Moni.Chaurasiya"
+                href="https://www.youtube.com/@NoteNest.Engineering"
                 target="_blank"
                 rel="noopener noreferrer"
               >
